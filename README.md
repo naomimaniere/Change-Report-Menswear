@@ -57,5 +57,3 @@ npm run dev
 - History — past comparisons aren't saved.
 - Scheduled snapshots.
 - SKU rename detection (the `MAN3508` → `MAN3508-05` colourway-suffix pattern).
-
-- 
