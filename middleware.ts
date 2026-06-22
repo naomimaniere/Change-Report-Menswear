@@ -1,10 +1,11 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { cookieIsValid, AUTH_COOKIE } from "@/lib/auth";
 
+export const runtime = "nodejs";
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Public routes that don't require auth
   if (
     pathname.startsWith("/signin") ||
     pathname.startsWith("/api/signin") ||
